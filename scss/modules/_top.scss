@@ -1,2 +1,14 @@
 @use "../global" as *;
 
+.top__background {
+  background: linear-gradient(to right, $blue, $blueBlack);
+  width: 100vw;
+
+  .swiper {
+    &-slide {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

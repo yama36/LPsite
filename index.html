@@ -18,8 +18,9 @@
     rel="stylesheet">
 
   <!-- css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="scss/main.css" />
+
 </head>
 
 
@@ -49,14 +50,14 @@
           <div class="nav__line"><span></span></div>
           <li class="nav__item">
             <a href="#about">
-              <div>岡崎組について</div>
+              <div>園崎組について</div>
               <div>ABOUT</div>
             </a>
           </li>
           <div class="nav__line"><span></span></div>
           <li class="nav__item">
             <a href="#works">
-              <div>岡崎組の実績</div>
+              <div>園崎組の実績</div>
               <div>WORKS</div>
             </a>
           </li>
@@ -75,7 +76,7 @@
             </a>
           </li>
         </ul>
-  </nav>
+      </nav>
       <div class="global-contents">
         <header id="header">
           <nav class="header-nav nav--top">
@@ -101,14 +102,14 @@
               <div class="nav__line"><span></span></div>
               <li class="nav__item">
                 <a href="#about">
-                  <div>岡崎組について</div>
+                  <div>園崎組について</div>
                   <div>ABOUT</div>
                 </a>
               </li>
               <div class="nav__line"><span></span></div>
               <li class="nav__item">
                 <a href="#works">
-                  <div>岡崎組の実績</div>
+                  <div>園崎組の実績</div>
                   <div>WORKS</div>
                 </a>
               </li>
@@ -130,9 +131,15 @@
           </nav>
           <div class="top-container">
             <div class="top__background">
-              <div class="top__background--mask"></div>
-              <div class="swiper">
-
+              <div class="top__background--mask">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <!-- スライド -->
+                    <div class="swiper-slide"><img src="img/top-image-1.png" alt="トップ画像１" class="swiper-img1"></div>
+                    <div class="swiper-slide"><img src="img/top-image-2.png" alt="トップ画像２" class="swiper-img2"></div>
+                    <div class="swiper-slide"><img src="img/top-image-3.png" alt="トップ画像３" class="swiper-img3"></div>
+                  </div>
+                </div>
               </div>
             </div>
             <h1 class="top__title">
@@ -297,10 +304,10 @@
                 <a href="#services">事業内容</a>
               </li>
               <li class="footer__nav__item">
-                <a href="#about">岡崎組について</a>
+                <a href="#about">園崎組について</a>
               </li>
               <li class="footer__nav__item">
-                <a href="#works">岡崎組の実績</a>
+                <a href="#works">園崎組の実績</a>
               </li>
               <li class="footer__nav__item">
                 <a href="#recruit">採用</a>
@@ -321,7 +328,8 @@
 
   <!-- JavaScript -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
 </body>
 
 </html>

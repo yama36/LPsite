@@ -436,7 +436,6 @@ th {
   text-align: center;
 }
 .header-nav .nav__item div:last-of-type {
-  margin-top: 2px;
   font-size: 10px;
 }
 .header-nav .nav__line {
@@ -457,4 +456,12 @@ th {
 
 .nav--fixd {
   display: none;
+}
+
+.top__background {
+  background: linear-gradient(to right, #4b6cb7, #182848);
+  width: 100vw;
+}
+.top__background .swiper-slide img {
+  width: 100%;
 }
