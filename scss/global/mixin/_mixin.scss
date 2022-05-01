@@ -1,0 +1,116 @@
+@use "../config" as *;
+
+
+// font
+@mixin font($font, $height:folse) {
+  @if type-of($font) == number {
+    font-size: $font / 10 * 1rem;
+  } @else {
+    font-size: map-get($fonts, $font);
+  }
+  @if type-of($height) == number {
+    line-height: $height;
+  }
+}
+
+// title
+@mixin content-title() {
+  @include font(title);
+  @include margin-bottom(l);
+  text-align: center;
+
+  @media (max-width: 600px) {
+      @include font(40);
+  }
+}
+
+// content-width
+@mixin content-width() {
+  width: $contents-width;
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+// margin padding
+@mixin margin-bottom($size) {
+  @if type-of($size) == number {
+    margin-bottom: $size * 1px;
+  } @else {
+    margin-bottom: map-get($sizes, $size);
+  }
+}
+
+@mixin padding-bottom($size) {
+  @if type-of($size) == number {
+    padding-bottom: $size * 1px;
+  } @else {
+    padding-bottom: map-get($sizes, $size);
+  }
+}
+
+@mixin content-margin($top-size, $bottom-size: null) {
+  @if type-of($top-size) == number {
+    @if $bottom-size != null {
+      margin: $top-size * 1px 0 $bottom-size * 1px;
+    } @else {
+      margin: $top-size * 1px 0;
+    }
+  } @else {
+    margin: map-get($sizes, $top-size) 0;
+  }
+}
+
+@mixin content-padding($top-size, $bottom-size: null) {
+  @if type-of($top-size) == number {
+    @if $bottom-size != null {
+      padding: $top-size * 1px 0 $bottom-size * 1px;
+    } @else {
+      padding: $top-size * 1px 0;
+    }
+  } @else {
+    padding: map-get($sizes, $top-size) 0;
+  }
+}
+
+@mixin contents-size($content: $contents-count, $width: $max-width) {
+  width: calc((85vw - ($spacing-5 * ($content - 1))) / $content);
+  height: calc((85vw - ($spacing-5 * ($content - 1))) / $content);
+  max-width: calc(($width - ($spacing-5 * ($content - 1)) - 2px) / $content);
+  max-height: calc(($width - ($spacing-5 * ($content - 1)) - 2px) / $content);
+}
+
+
+
+// btn
+// header-btn
+@mixin btn1($color: $cGreen, $font-color: $cGray) {
+  &.btn {
+    display: block;
+    width: auto;
+    margin: 0 auto;
+    padding: $spacing-2 $spacing-4;
+    background-color: $color;
+    color: $font-color;
+    border: none;
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, .5);
+    border-radius: $template-radius;
+    transition: .1s;
+
+    &:hover {
+      transform: translate(2px, 2px);
+      box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, .5);
+    }
+  }
+}
+
+
+// anchor
+@mixin anchor {
+  padding-top: calc(map-get($sizes, 'l') + $header-nav-height);
+  margin-top: calc(-1 * (map-get($sizes, 'l') + $header-nav-height));
+}
+
+// レスポンシブ
+@mixin setWidth($w) {
+  width: $w;
+}

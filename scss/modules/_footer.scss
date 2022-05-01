@@ -1,0 +1,11 @@
+@use "../global" as *;
+
+.footer {
+  @include content-padding(4);
+  width: 100vw;
+  text-align: center;
+}
+
+.footer__title {
+  text-align: center;
+}

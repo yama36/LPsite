@@ -1,0 +1,28 @@
+@use "../global" as *;
+
+@media (max-width: 1050px) {
+  // header-nav
+  .header-nav {
+    width: $contents-width;
+    max-width: 900px;
+
+    &.hidden {
+      animation: none;
+    }
+
+    &.top {
+      animation: none;
+    }
+  }
+
+  // yamablog
+  .swiper-nav {
+    .swiper-button-prev {
+      left: $spacing-2;
+    }
+
+    .swiper-button-next {
+      right: $spacing-2;
+    }
+  }
+}

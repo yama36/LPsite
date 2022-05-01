@@ -1,0 +1,81 @@
+@use "../global" as *;
+
+.yamablog-container {
+  @include content-padding(lll);
+  width: 100vw;
+}
+
+.yamablog {
+  @include content-width;
+}
+
+.yamablog-anchor {
+  @include anchor;
+}
+
+.yamablog__title {
+  @include content-title;
+}
+
+.yamablog__button {
+  @include btn1;
+
+  &.btn {
+    margin: 0 auto;
+    margin-right: $spacing-2;
+    margin-top: $spacing-2;
+    padding: $spacing-1 $spacing-4;
+  }
+}
+
+// swiper
+.swiper {
+  width: 100%;
+  max-width: $max-width;
+
+  &-slide {
+    width: calc(($max-width - ($spacing-5 * 2)) / 3);
+
+    &__img {
+      height: calc((($max-width - ($spacing-5 * 2)) * 3) / 16);
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &__text {
+      position: relative;
+      padding: $spacing-2;
+      padding-top: $spacing-1;
+      padding-bottom: 0;
+      height: calc(100% - (($max-width - ($spacing-5 * 2)) * 3) / 16);
+      margin-bottom: auto;
+
+      &-title {
+        margin-bottom: $spacing-half;
+      }
+
+      &-time {
+        @include font(s);
+        text-align: right;
+      }
+    }
+  }
+}
+
+.swiper-nav {
+  position: relative;
+
+  .swiper-button-prev {
+    top: calc(((($max-width - ($spacing-5 * 2)) * 3) / 16) / 2);
+    color: gray;
+    outline-style: none;
+    left: -50px;
+  }
+
+  .swiper-button-next {
+    top: calc(((($max-width - ($spacing-5 * 2)) * 3) / 16) / 2);
+    color: gray;
+    outline-style: none;
+    right: -50px;
+  }
+}

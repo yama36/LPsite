@@ -1,0 +1,37 @@
+// padding margin
+$sizes: (
+  ss: 8px,
+  s: 16px,
+  m: 32px,
+  l: 64px,
+  ll: 128px,
+  lll: 192px,
+);
+
+// width
+$max-width: 900px;
+$max-width-ud900: 600px;
+$contents-width: 85%;
+
+// height
+$header-nav-height: 80px;
+
+// radius
+$template-radius: 4px;
+
+// spacing
+$spacing-0: 0;
+$spacing-half: 4px;
+$spacing-1: 8px;
+$spacing-2: 16px;
+$spacing-3: 24px;
+$spacing-4: 32px;
+$spacing-5: 48px;
+$spacing-6: 64px;
+$spacing-7: 96px;
+$spacing-8: 128px;
+$spacing-9: 192px;
+$spacing-10: 256px;
+
+// contents volume
+$contents-count: 3;

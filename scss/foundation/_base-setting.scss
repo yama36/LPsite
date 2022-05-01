@@ -1,0 +1,31 @@
+@use "../global" as *;
+
+html {
+  user-select: none;
+  -moz-user-select: none; /* Firefox */
+  -webkit-user-select: none; /* Safari、Chromeなど */
+
+  font-size: 62.5%; /* font:10px */
+
+  /*IE(Internet Explorer)・Microsoft Edgeへの対応*/
+  -ms-overflow-style: none;
+  /*Firefoxへの対応*/
+  scrollbar-width: none;
+}
+
+/*Google Chrome、Safariへの対応*/
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-size:1.6rem; /* 16px */
+  color: $cBlack;
+  font-family: 'Noto Serif', 'Noto Serif JP', serif;
+
+  &.active {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+  }
+}
