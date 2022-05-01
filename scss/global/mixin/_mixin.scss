@@ -14,7 +14,7 @@
 }
 
 // title
-@mixin content-title() {
+@mixin title() {
   @include font(title);
   @include margin-bottom(l);
   text-align: center;
@@ -83,7 +83,7 @@
 
 // btn
 // header-btn
-@mixin btn1($color: $cGreen, $font-color: $cGray) {
+@mixin btn1($color: $cGreen, $font-color: $gray) {
   &.btn {
     display: block;
     width: auto;

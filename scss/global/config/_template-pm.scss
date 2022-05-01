@@ -9,15 +9,13 @@ $sizes: (
 );
 
 // width
-$max-width: 900px;
-$max-width-ud900: 600px;
-$contents-width: 85%;
+$max-width: 1016px;
+$contents-width: 90%;
+$logo-width: 136px;
 
 // height
 $header-nav-height: 80px;
-
-// radius
-$template-radius: 4px;
+$logo-height: 29px;
 
 // spacing
 $spacing-0: 0;
@@ -32,6 +30,3 @@ $spacing-7: 96px;
 $spacing-8: 128px;
 $spacing-9: 192px;
 $spacing-10: 256px;
-
-// contents volume
-$contents-count: 3;
