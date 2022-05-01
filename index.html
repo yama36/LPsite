@@ -1,597 +1,327 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex" />
-    <title>株式会社 園崎組</title>
-    <meta
-      name="description"
-      content="達のモットーは、「社会基盤から世界をより良くする」こと。そのために最前線で国家規模のプロフェクトに参画することもあれば、 世界各国の技術者、研究者と共に次世代の建設機材の研究開発事業も 同時に行うことで、業界の進化の促進を担っています。"
-    />
 
-    <!-- css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css"/>
-    <link rel="stylesheet" href="scss/main.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>株式会社 園崎組</title>
+  <meta name="description"
+    content="達のモットーは、「社会基盤から世界をより良くする」こと。そのために最前線で国家規模のプロフェクトに参画することもあれば、 世界各国の技術者、研究者と共に次世代の建設機材の研究開発事業も 同時に行うことで、業界の進化の促進を担っています。" />
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
+  <link rel="stylesheet" href="scss/main.css" />
+</head>
 
 
-  <body>
-    <div id="global-container">
-      <nav class="HB__menu">
+<body>
+  <div id="global-container">
+    <div class="global-container--inner">
+      <nav class="header-nav nav--fixd">
         <div class="title-container">
           <a href="#">
-            <img class="logo2" src="img/logo02.png" alt="logo" />
+            <img class="logo" src="img/logo/PC/logo-b.svg" alt="logo" />
           </a>
         </div>
-        <ul class="HB__list">
-          <li class="HB__item"><a href="oheya/index.html">お部屋</a></li>
-          <li class="HB__item"><a href="menu/index.html">お料理</a></li>
-          <li class="HB__item"><a href="onsen/index.html">温泉</a></li>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#">
+              <div>トップ</div>
+              <div>TOP</div>
+            </a>
+          </li>
+          <div class="nav__line"><span></span></div>
+          <li class="nav__item">
+            <a href="#services">
+              <div>事業内容</div>
+              <div>SERVICES</div>
+            </a>
+          </li>
+          <div class="nav__line"><span></span></div>
+          <li class="nav__item">
+            <a href="#about">
+              <div>岡崎組について</div>
+              <div>ABOUT</div>
+            </a>
+          </li>
+          <div class="nav__line"><span></span></div>
+          <li class="nav__item">
+            <a href="#works">
+              <div>岡崎組の実績</div>
+              <div>WORKS</div>
+            </a>
+          </li>
+          <div class="nav__line"><span></span></div>
+          <li class="nav__item">
+            <a href="#recruit">
+              <div>採用情報</div>
+              <div>RECRUIT</div>
+            </a>
+          </li>
+          <div class="nav__line"><span></span></div>
+          <li class="nav__item">
+            <a href="#contact">
+              <div>お問い合わせ</div>
+              <div>CONTACT</div>
+            </a>
+          </li>
         </ul>
-        <button id="modal-open" class="HB__reserve">
-          <img src="img/calender.png" alt="calender" />
-          <h2>宿泊予約</h2>
-        </button>
-      </nav>
-      <div id="modal-content">
-        <h2>宿泊予約</h2>
-        <img class="remove-btn" src="img/close.png" alt="" />
-        <form
-          id="form"
-          class="form scroll"
-          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScXPvWvOJbZuMEa_L7ENd6Obd17J2R5lnMZkdhGppLZEnf9fw/formResponse"
-        >
-          <div>
-            <label for="name">お名前</label>
-            <input
-              type="text"
-              id="name"
-              name="entry.1523392160"
-              placeholder=" 例：石井正悟"
-              required
-            />
-          </div>
-          <div>
-            <label for="email">メールアドレス</label>
-            <input
-              type="mail"
-              id="email"
-              name="entry.1145996114"
-              placeholder="例：Example@example.com"
-              required
-            />
-          </div>
-          <div>
-            <label for="modalPlan"
-              >ご希望プラン（空いているプランのみ表示されます）</label
-            >
-            <select
-              size="1"
-              id="modalPlan"
-              name="entry.175572300"
-              placeholder=""
-              class="is-empty"
-              required
-            >
-              <option value="" hidden>プランを選択してください</option>
-              <option value="1">
-                【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
-              </option>
-              <option value="2">平日に優雅に楽しむ、特別宿泊プラン</option>
-              <option value="3">
-                絶景貸切露天と個室会席を満喫できるファミリープラン
-              </option>
-            </select>
-          </div>
-          <div>
-            <label for="day">日時選択</label>
-            <input
-              id="calendar"
-              data-mindate="today"
-              type="text"
-              name="entry.175572300"
-              placeholder="日時を選択してください"
-              required
-            />
-          </div>
-          <button
-            class="changed submit-btn"
-            id="js-submit"
-            type="submit"
-            disabled
-          >
-            送信する
-          </button>
-        </form>
-      </div>
-      <div class="global-content">
-        <div class="HB__back"></div>
+  </nav>
+      <div class="global-contents">
         <header id="header">
-          <div class="header-container">
+          <nav class="header-nav nav--top">
             <div class="title-container">
               <a href="#">
-                <img class="logo1" src="img/logo01.png" alt="logo" />
-                <img class="logo2" src="img/logo02.png" alt="logo" />
-                <h1 class="header__title">石井花壇</h1>
+                <img class="logo" src="img/logo/PC/logo-w.svg" alt="logo" />
               </a>
             </div>
-            <nav class="header__nav">
-              <ul class="header__menu">
-                <li class="header__item">
-                  <a href="oheya/index.html">お部屋</a>
-                </li>
-                <li class="header__item">
-                  <a href="menu/index.html">お料理</a>
-                </li>
-                <li class="header__item">
-                  <a href="onsen/index.html">温泉</a>
-                </li>
-              </ul>
-            </nav>
-            <button id="modal-open" class="reserve">
-              <img src="img/calender.png" alt="calender" />
-              <h2>宿泊予約</h2>
-            </button>
-            <button class="HB">
-              <div class="HB__btn">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </button>
-          </div>
-          <div class="header__top" id="top">
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="top__img1 scale"></div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="top__img2 scale"></div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="top__img3 scale"></div>
-                </div>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#">
+                  <div>トップ</div>
+                  <div>TOP</div>
+                </a>
+              </li>
+              <div class="nav__line"><span></span></div>
+              <li class="nav__item">
+                <a href="#services">
+                  <div>事業内容</div>
+                  <div>SERVICES</div>
+                </a>
+              </li>
+              <div class="nav__line"><span></span></div>
+              <li class="nav__item">
+                <a href="#about">
+                  <div>岡崎組について</div>
+                  <div>ABOUT</div>
+                </a>
+              </li>
+              <div class="nav__line"><span></span></div>
+              <li class="nav__item">
+                <a href="#works">
+                  <div>岡崎組の実績</div>
+                  <div>WORKS</div>
+                </a>
+              </li>
+              <div class="nav__line"><span></span></div>
+              <li class="nav__item">
+                <a href="#recruit">
+                  <div>採用情報</div>
+                  <div>RECRUIT</div>
+                </a>
+              </li>
+              <div class="nav__line"><span></span></div>
+              <li class="nav__item">
+                <a href="#contact">
+                  <div>お問い合わせ</div>
+                  <div>CONTACT</div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="top-container">
+            <div class="top__background">
+              <div class="top__background--mask"></div>
+              <div class="swiper">
+
               </div>
             </div>
-            <div class="subTitle">
-              <h2>頑張る人の</h2>
-              <h2>頑張らない時間</h2>
-            </div>
-            <div class="top__text">
-              <div
-                class="top__text__title"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              >
-                <h3>温海温泉の</h3>
-                <h3>美しさに癒されて</h3>
+            <h1 class="top__title">
+              <span>CHALLENGE</span>
+              <span>FROM THE BOTTOM</span>
+            </h1>
+            <h2 class="top__discription1">社会の基礎を支え</h2>
+            <h2 class="top__discription2">基礎から世界を変革する会社</h2>
+            <div class="news">
+              <h2 class="news__title title-style">NEWS</h2>
+              <div class="news__content">
+                <div class="news__content--time">2021.06.12</div>
+                <div class="news__content--info">お知らせ</div>
+                <div class="news__content--title">お知らせ</div>
               </div>
-              <div
-                class="top__text1"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              >
-                <p>東北の奥座敷である温海温泉郷</p>
-                <p>開湯は約１３００年前とされ、投小角が</p>
-                <p>発見したと伝えられます</p>
-              </div>
-              <div
-                class="top__text2"
-                data-aos-delay="100"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              >
-                <p>石井花壇は江戸より続く由緒ある旅館で</p>
-                <p>クラシックな作りの中に大正ロマンあふれる</p>
-                <p>内装を残しております</p>
-              </div>
-              <div
-                class="top__text3"
-                data-aos-delay="200"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              >
-                <p>圧倒的いやしの空間で</p>
-                <p>頑張る現代人に</p>
-                <p>頑張らない圧倒的な非日常をご提供します</p>
-              </div>
-              <div
-                class="top__name"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              >
-                石井花壇
-              </div>
+              <div class="news__arrow">&rarr;</div>
             </div>
           </div>
         </header>
         <main id="main">
-          <section id="contents">
-            <div class="contents-container">
-              <div class="contents__oheya">
-                <img
-                  src="img/oheya-top.jpg"
-                  alt="oheya"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                />
-                <div class="contents__text">
-                  <h2
-                    data-aos-delay="200"
-                    data-aos="fade-up"
-                    data-aos-duration="1500"
-                  >
-                    喧騒から離れた空間<br />
-                    心落ち着く至極のひととき
-                  </h2>
-                  <p
-                    data-aos-delay="100"
-                    data-aos="fade-up"
-                    data-aos-duration="1500"
-                  >
-                    まるで時が止まったかのような、圧倒的な静寂のなかで、ひたすらにゆったりと…。<br />
-                    最高級の「何もしない時間」をお過ごしください。
-                  </p>
-                  <a href="oheya/index.html"
-                    ><button
-                      class="contents__btn"
-                      data-aos-delay="100"
-                      data-aos="fade-up"
-                      data-aos-duration="1500"
-                    >
-                      お部屋について
-                    </button></a
-                  >
-                </div>
-              </div>
-              <div class="contents__menu">
-                <img
-                  src="img/menu-top.jpg"
-                  alt="menu"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                />
-                <div class="contents__text">
-                  <h2
-                    data-aos-delay="200"
-                    data-aos="fade-up"
-                    data-aos-duration="1500"
-                  >
-                    出迎えるのは<br />
-                    極上の温海料理
-                  </h2>
-                  <p
-                    data-aos-delay="100"
-                    data-aos="fade-up"
-                    data-aos-duration="1500"
-                  >
-                    最も旬の食材を愉しむ、最高の贅沢を最高級A5ランクの米沢牛と共に頂く。<br />
-                    あなたの人生史に残る「極上の感動」をお約束します。
-                  </p>
-                  <a href="menu/index.html"
-                    ><button
-                      class="contents__btn"
-                      data-aos-delay="100"
-                      data-aos="fade-up"
-                      data-aos-duration="1500"
-                    >
-                      お料理について
-                    </button></a
-                  >
-                </div>
-              </div>
-              <div class="contents__onsen">
-                <img
-                  src="img/onsen-top.jpg"
-                  alt="onsen"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                />
-                <div class="contents__text">
-                  <h2
-                    data-aos-delay="200"
-                    data-aos="fade-up"
-                    data-aos-duration="1500"
-                  >
-                    疲れ切った身体にやすらぎを<br />
-                    温海の源泉に癒やされて
-                  </h2>
-                  <p
-                    data-aos-delay="100"
-                    data-aos="fade-up"
-                    data-aos-duration="1500"
-                  >
-                    古くは弘法大師の病をも治療したと言われる熱海の泉質。<br />
-                    現代人の疲弊しきった身体を修復する最高級の湯治場としてご活用ください。
-                  </p>
-                  <a href="onsen/index.html"
-                    ><button
-                      class="contents__btn"
-                      data-aos-delay="100"
-                      data-aos="fade-up"
-                      data-aos-duration="1500"
-                    >
-                      温泉について
-                    </button></a
-                  >
+          <section id="services">
+            <div class="services-container">
+              <div class="services-inner">
+                <div class="services__background"></div>
+                <img src="img/image-services.jpg" alt="事業内容画像" class="services__img">
+                <div class="services__text">
+                  <h2 class="services__title title-style">SERVICES</h2>
+                  <div class="services__title--sub">
+                    <h3>
+                      <span>人々の生活基盤を</span>
+                      <span>世界最高峰の技術で支える</span>
+                    </h3>
+                  </div>
+                  <div class="services__content">
+                    <p>私達のモットーは、 「社会基盤から世界をより良くする」こと。</p>
+                    <p>そのために最前線で国家規模のプロフェクトに参画することもあれば、</p>
+                    <p>世界各国の技術者、研究者と共に次世代の建設機材の研究開発事業も</p>
+                    <p>同時に行うことで、業界の進化の促進を担っています。</p>
+                  </div>
+                  <button class="services__button btn">事業内容を更に知る　⇀</button>
                 </div>
               </div>
             </div>
           </section>
-          <section id="plan">
-            <div class="plan-container">
-              <div
-                class="plan__title"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              >
-                <img src="img/logo02.png" alt="logo" />
-                <h2>おすすめのご宿泊プラン</h2>
+          <section id="about">
+            <div class="about-container">
+              <div class="about-inner">
+                <img src="img/background-image-about.jpg" alt="ABOUT背景画像" class="about__img--back">
+                <div class="about__text">
+                  <h2 class="about__title title-style">ABOUT</h2>
+                  <div class="about__text-content">
+                    <p>園崎組は埼玉県秩父市にて、主に土木工事にて</p>
+                    <p>社会基盤を支える企業になります。</p>
+                    <p>また、自社工場において施工に必要とされる</p>
+                    <p>各種資材も生産しており、各業者に提供することで、</p>
+                    <p>社会基盤の構築・整備に貢献しております。</p>
+                  </div>
+                  <button class="about__button btn">詳しく見る　⇀</button>
+                  <img src="img/image-about.jpg" alt="重機画像" class="about__img">
+                </div>
               </div>
-              <ul class="plan__list">
-                <li
-                  class="plan__item"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                >
-                  <img src="img/recommended01.jpg" alt="plan-img" />
-                  <h3>朝食付きプラン、日本近海で取れたのどぐろを朝食として…</h3>
-                  <p>
-                    最高級と称されるのどぐろ、正式には「アカムツ」と呼ばれる魚、味は独特の上品な味わいで、焼いても煮ても美味
-                  </p>
+            </div>
+          </section>
+          <section id="works">
+            <div class="works-container">
+              <div class="works__background"></div>
+              <h2 class="works__title title-style">WORKS</h2>
+              <div class="works__title--sub">社会を基礎から、変革してきたプロジェクト</div>
+              <div class="works__content">
+                <p>創業以來より培われた確かな技術力で社会を変革する様々な案件を手掛けてきました。</p>
+                <p>その一部を紹介させていただきます。</p>
+              </div>
+              <ul class="works__list">
+                <li class="works__item">
+                  <div class="works__item-number">01</div>
+                  <img src="img/image-works-1.jpg" alt="実績画像１" class="works__item-img">
+                  <div class="works__item-text">
+                    <p class="works__item-title">施工実績</p>
+                    <p class="works__item-content">東南アジア某国での国家規模のプロジェクトに参画した際の園崎組のプロジェクトストーリーを記載しています。</p>
+                  </div>
                 </li>
-                <li
-                  class="plan__item"
-                  data-aos-delay="100"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                >
-                  <img src="img/recommended02.jpg" alt="plan-img" />
-                  <h3>【期間限定】熱海蟹をたっぷりと愉しむプラン。</h3>
-                  <p>
-                    温海で水揚げされた蟹は「温海蟹」として知られ、嗜好品として愛されてきました。この宿泊プランでは存分に
-                  </p>
-                </li>
-                <li
-                  class="plan__item"
-                  data-aos-delay="200"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                >
-                  <img src="img/recommended03.jpg" alt="plan-img" />
-                  <h3>
-                    【平日限定】贅沢美味懐石プラン。海辺の四季旬彩プラン。
-                  </h3>
-                  <p>
-                    熱海近海で取れた魚を鮮度そのままに舟盛りにしてご提供。生きた味をお楽しみください。
-                  </p>
+                <li class="works__item">
+                  <div class="works__item-number">02</div>
+                  <img src="img/image-works-2.jpg" alt="実績画像２" class="works__item-img">
+                  <div class="works__item-text">
+                    <p class="works__item-title">商品納入実績</p>
+                    <p class="works__item-content">土木・建設資材のプロフェッショナルとして、現場で必要となる各種資材を提供しています。</p>
+                  </div>
                 </li>
               </ul>
+              <button class="works__button btn">実績一覧を見る　⇀</button>
             </div>
           </section>
-          <section id="news">
-            <div class="news-container">
-              <div
-                class="news__title"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              >
-                <img src="img/logo02.png" alt="logo" />
-                <h2>お知らせ</h2>
-                <ul
-                  class="news__nav tab clearfix"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                >
-                  <li class="active">営業情報</li>
-                  <li>その他</li>
-                </ul>
-              </div>
-              <div class="area">
-                <ul class="news__list show">
-                  <li
-                    class="news__list__item"
-                    data-aos="fade-up"
-                    data-aos-duration="1500"
-                    data-aos-delay="100"
-                  >
-                    <img src="img/news01.jpg" alt="" />
-                    <div class="news__list__text">
-                      <p>2020.12.24</p>
-                      <p>年末最後の営業日は27日になります。</p>
-                    </div>
-                  </li>
-                  <li
-                    class="news__list__item"
-                    data-aos="fade-up"
-                    data-aos-duration="1500"
-                    data-aos-delay="150"
-                  >
-                    <img src="img/news02.jpg" alt="" />
-                    <div class="news__list__text">
-                      <p>2020.12.24</p>
-                      <p>年末最後の営業日のお知らせ</p>
-                    </div>
-                  </li>
-                  <li
-                    class="news__list__item"
-                    data-aos="fade-up"
-                    data-aos-duration="1500"
-                    data-aos-delay="200"
-                  >
-                    <img src="img/news02.jpg" alt="" />
-                    <div class="news__list__text">
-                      <p>2020.12.11</p>
-                      <p>
-                        12.21は臨時休業とさせていただきますので、よろしくお願いします。
-                      </p>
-                    </div>
-                  </li>
-                  <li
-                    class="news__list__item"
-                    data-aos="fade-up"
-                    data-aos-duration="1500"
-                    data-aos-delay="250"
-                  >
-                    <img src="img/news01.jpg" alt="" />
-                    <div class="news__list__text">
-                      <p>2020.12.24</p>
-                      <p>年末最後の営業日のお知らせ</p>
-                    </div>
-                  </li>
-                  <li
-                    class="news__list__item"
-                    data-aos="fade-up"
-                    data-aos-duration="1500"
-                    data-aos-delay="300"
-                  >
-                    <img src="img/news01.jpg" alt="" />
-                    <div class="news__list__text">
-                      <p>2020.12.01</p>
-                      <p>
-                        和室の改装を行いますため、12.10はお休みさせていただきます。
-                      </p>
-                    </div>
-                  </li>
-                  <li
-                    class="news__list__item"
-                    data-aos="fade-up"
-                    data-aos-duration="1500"
-                    data-aos-delay="350"
-                  >
-                    <img src="img/news02.jpg" alt="" />
-                    <div class="news__list__text">
-                      <p>2020.12.24</p>
-                      <p>年末最後の営業日のお知らせ</p>
-                    </div>
-                  </li>
-                </ul>
-                <ul class="news__list">
-                  <li class="news__list__item">
-                    <img src="img/news02.jpg" alt="" />
-                    <div class="news__list__text">
-                      <p>2020.11.11</p>
-                      <p>
-                        【早割】１ヶ月目に予約していただくと早割の得点がつきます。
-                      </p>
-                    </div>
-                  </li>
-                  <li class="news__list__item">
-                    <img src="img/news01.jpg" alt="" />
-                    <div class="news__list__text">
-                      <p>2020.11.7</p>
-                      <p>秋の紅葉キャンペーン実施中</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+          <section id="recruit">
+            <div class="recruit-container">
+              <h2 class="recruit__title title-style">RECRUIT</h2>
+              <ul class="recruit__list">
+                <li class="recruit__item">
+                  <img src="img/image-recruit-1.jpg" alt="採用情報画像１" class="recruit__item-img">
+                  <button class="recruit__item-btn btn--trans">
+                    <p>園崎組を知る</p>
+                    <span>⇀</span>
+                  </button>
+                </li>
+                <li class="recruit__item">
+                  <img src="img/image-recruit-2.jpg" alt="採用情報画像２" class="recruit__item-img">
+                  <button class="recruit__item-btn btn--trans">
+                    <p>園崎組の一日</p>
+                    <span>⇀</span>
+                  </button>
+                </li>
+                <li class="recruit__item">
+                  <img src="img/image-recruit-3.jpg" alt="採用情報画像３" class="recruit__item-img">
+                  <button class="recruit__item-btn btn--trans">
+                    <p>求める人物像</p>
+                    <span>⇀</span>
+                  </button>
+                </li>
+              </ul>
+              <button class="works__button btn">エントリーはこちら　⇀</button>
             </div>
           </section>
-          <section id="access">
-            <div class="access-container">
-              <div
-                class="access__title"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              >
-                <img src="img/logo02.png" alt="logo" />
-                <h2>アクセス</h2>
+          <section id="contact">
+            <div class="contact-container">
+              <img src="img/bckground-image-contact.jpg" alt="CONTACT背景画像" class="ontact__background-img">
+              <h2 class="contact__title title-style">CONTACT</h2>
+              <div class="contact__content">
+                <p>園崎組では一般的な施工から特注部品、機械の開発・製造まで一貫して対応しております。</p>
+                <p>お気軽にご連絡ください。</p>
               </div>
-              <img
-                class="access__img"
-                src="img/acess.jpg"
-                alt=""
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              />
-              <dl
-                class="access__list"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              >
-                <dt>住所</dt>
-                <dd>〒000-0000</dd>
-                <dd>山形県鶴岡市xxxxxxxxxx</dd>
-                <dt>TEL/FAX</dt>
-                <dd>000-0000-0000/00-0000-0000</dd>
-                <dt>営業時間</dt>
-                <dd>14:00-23:00</dd>
-                <p>
-                  ＊4名以上のご予約の場合は、最寄り駅の「鶴岡駅」より送迎が可能ですので、ご連絡ください。
-                </p>
-              </dl>
-              <!-- <div class="access__map" data-aos="fade-up" data-aos-duration="1500">
-                <iframe class="access__map__inner" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24933.858417388223!2d139.58105087757326!3d38.63203904518282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8c6dbd6c03ae15%3A0x10bc5da99bc816ef!2z44CSOTk5LTcyMDUg5bGx5b2i55yM6ba05bKh5biC5rip5rW3!5e0!3m2!1sja!2sjp!4v1635328823615!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-              </div> -->
+              <button class="contact__btn btn-icon">
+                <img class="contact__btn-icon" src="" alt="">
+                <div class="contact__btn-text">施工のご相談　⇀</div>
+              </button>
+              <button class="contact__btn btn-icon">
+                <img class="contact__btn-icon" src="" alt="">
+                <div class="contact__btn-text">特注製作のご相談　⇀</div>
+              </button>
             </div>
           </section>
         </main>
         <footer id="footer">
+          <div class="footer__title">
+            <img src="img/logo/PC/logo-w-2.svg" alt="logo" />
+          </div>
+          <div class="footer__address" data-aos="fade-up" data-aos-duration="1500">
+            <div>
+              <p>〒000-0000</p>
+              <p class="footer__address1">埼玉県秩父市×××××××××××</p>
+            </div>
+            <div>
+              <p>TEL 0494-00-0000</p>
+              <p>FAX 000-0000-0000</p>
+            </div>
+          </div>
           <nav class="footer__nav">
-            <ul
-              class="footer__menu"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
-              <li class="footer__menu__item">
-                <a href="oheya/index.html">お部屋</a>
+            <ul class="footer__nav-list" data-aos="fade-up" data-aos-duration="1500">
+              <li class="footer__nav__item">
+                <a href="#">トップ</a>
               </li>
-              <li class="footer__menu__item">
-                <a href="menu/index.html">お料理</a>
+              <li class="footer__nav__item">
+                <a href="#services">事業内容</a>
               </li>
-              <li class="footer__menu__item">
-                <a href="onsen/index.html">温泉</a>
+              <li class="footer__nav__item">
+                <a href="#about">岡崎組について</a>
+              </li>
+              <li class="footer__nav__item">
+                <a href="#works">岡崎組の実績</a>
+              </li>
+              <li class="footer__nav__item">
+                <a href="#recruit">採用</a>
+              </li>
+              <li class="footer__nav__item">
+                <a href="#contact">お問い合わせ</a>
               </li>
             </ul>
           </nav>
-          <div
-            class="footer__title"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-          >
-            <img src="img/logo02.png" alt="logo" />
-            <h2>石井花壇</h2>
-          </div>
-          <div
-            class="footer__address"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-          >
-            <div>
-              <p>〒000-0000</p>
-              <p class="footer__address1">山形県鶴岡市xxxxxxxxxxx</p>
-            </div>
-            <div>
-              <p>TEL.000-0000-0000</p>
-              <p>FAX.00-0000-0000</p>
-            </div>
-          </div>
-          <div class="footer-container">
-            <small>Copyright © 石井花壇 All Rights Reserved.</small>
+          <div class="footer-copy">
+            <small>Copyright © SONOZAKI CO.LTD All Rights Reserved.</small>
           </div>
         </footer>
       </div>
     </div>
+  </div>
 
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/swiper.js"></script>
-    <script src="js/modal.js"></script>
-    <script src="js/calendar.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/tab.js"></script>
-    <script src="js/hbMenu.js"></script>
-    <script>
-      AOS.init({
-        once: true,
-      });
-    </script>
-  </body>
+
+  <!-- JavaScript -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+</body>
+
 </html>
