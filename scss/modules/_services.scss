@@ -1,0 +1,65 @@
+@use "../global" as *;
+
+.services-container {
+  width: 100vw;
+  background-color: $gray;
+  margin: 160px 0 205px;
+  position: relative;
+}
+
+.services__background {
+  position: absolute;
+  right: -10px;
+  width: 27.2vw;
+  height: 31.84vw;
+  transform: skewX(-41deg);
+  background-color: $white;
+}
+
+.services-inner {
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+  position: relative;
+}
+
+.services__img {
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+
+.services__text {
+  max-width: 523px;
+  margin-left: auto;
+
+  .services__title-container {
+    @include title("事業内容");
+    padding: 40px 0;
+  }
+
+  .services__title--sub {
+    @include font(lll);
+    line-height: 1;
+    margin-bottom: 22px;
+
+    div:last-of-type {
+      margin-top: 13px;
+    }
+  }
+
+  .services__content {
+    line-height: 2;
+    margin-bottom: 24px;
+
+    p {
+      letter-spacing: .02em;
+    }
+  }
+
+  .services__button {
+    @include btn;
+    position: relative;
+    bottom: -18px;
+  }
+}

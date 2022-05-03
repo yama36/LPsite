@@ -14,13 +14,44 @@
 }
 
 // title
-@mixin title() {
-  @include font(title);
-  @include margin-bottom(l);
-  text-align: center;
+@mixin title($content) {
+  display: flex;
+
+  .title-style {
+    @include font(title);
+    line-height: 0.75;
+    font-weight: bold;
+  }
+
+  .nav__line {
+    width: 21px;
+    height: 24px;
+    margin: auto $spacing-1 0;
+    position: relative;
+
+    span {
+      position: absolute;
+      top: -6px;
+      left: 10px;
+      background-color: $blue;
+      width: 1px;
+      height: 32px;
+      transform: rotate(40deg);
+    }
+
+    &::after {
+      width: 150px;
+      position: absolute;
+      @include font(ll);
+      content: $content;
+      color: blue;
+      left: 30px;
+      bottom: -5px;
+    }
+  }
+
 
   @media (max-width: 600px) {
-      @include font(40);
   }
 }
 
@@ -83,24 +114,14 @@
 
 // btn
 // header-btn
-@mixin btn1($color: $cGreen, $font-color: $gray) {
-  &.btn {
-    display: block;
-    width: auto;
-    margin: 0 auto;
-    padding: $spacing-2 $spacing-4;
-    background-color: $color;
-    color: $font-color;
-    border: none;
-    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, .5);
-    border-radius: $template-radius;
-    transition: .1s;
-
-    &:hover {
-      transform: translate(2px, 2px);
-      box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, .5);
-    }
-  }
+@mixin btn() {
+  display: block;
+  width: auto;
+  padding: 24px 40px;
+  background-color: $blue;
+  color: $white;
+  border: none;
+  box-shadow: 0px 3px 4px 0 rgba($blueBlack, .46);
 }
 
 
