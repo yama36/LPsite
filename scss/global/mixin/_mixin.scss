@@ -9,7 +9,7 @@
     font-size: map-get($fonts, $font);
   }
   @if type-of($height) == number {
-    line-height: $height;
+    line-height: calc($height / $font);
   }
 }
 

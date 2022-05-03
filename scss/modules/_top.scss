@@ -1,6 +1,13 @@
 @use "../global" as *;
 
+.top-container {
+  position: relative;
+  width: 100vw;
+}
+
 .top__background {
+  position: relative;
+  z-index: -100;
   background: linear-gradient(to right, $blue, $blueBlack);
   width: 100vw;
 
@@ -9,6 +16,56 @@
       img {
         width: 100%;
       }
+    }
+  }
+}
+
+.top__text-container {
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: calc((100vw - $max-width) / 2);
+  z-index: 100;
+
+  .top__title {
+    @include font(96, 112);
+    font-weight: 900;
+    color: $white;
+    padding-top: 100px;
+    text-shadow: 4px 4px 4px rgba($color: #182848, $alpha: .5);
+    letter-spacing: 2px;
+  }
+
+  .top__discription {
+    @include font(lll);
+    position: relative;
+    width: fit-content;
+    font-weight: bold;
+    margin-top: 21px;
+    margin-left: 27px;
+    padding: 0 25px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    z-index: 10;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transform: skewX(-40deg);
+      background-color: $white;
+      z-index: -10;
+      box-shadow: 8px 4px $blueBlack;
+    }
+
+    &:nth-of-type(2) {
+      margin-top: 16px;
     }
   }
 }
