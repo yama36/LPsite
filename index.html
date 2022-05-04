@@ -151,7 +151,7 @@
                 <h2 class="top__discription">基礎から世界を変革する会社</h2>
             </div>
             <div class="news">
-              <h2 class="news__title title-style">NEWS</h2>
+              <h2 class="news__title">NEWS</h2>
               <div class="news__content">
                 <div class="news__content--time">2021.06.12</div>
                 <div class="news__content--category">お知らせ</div>
@@ -184,17 +184,20 @@
                     <p>世界各国の技術者、研究者と共に次世代の建設機材の研究開発事業も</p>
                     <p>同時に行うことで、業界の進化の促進を担っています。</p>
                   </div>
-                  <button class="services__button btn">事業内容を更に知る　⇀</button>
+                  <button class="services__button btn">事業内容を更に知る<span>⇀</span></button>
                 </div>
               </div>
             </div>
           </section>
           <section id="about">
             <div class="about-container">
+              <img src="img/background-image-about.jpg" alt="ABOUT背景画像" class="about__img--back">
               <div class="about-inner">
-                <img src="img/background-image-about.jpg" alt="ABOUT背景画像" class="about__img--back">
                 <div class="about__text">
-                  <h2 class="about__title title-style">ABOUT</h2>
+                  <div class="about__title-container">
+                    <h2 class="about__title title-style">ABOUT</h2>
+                    <div class="nav__line"><span></span></div>
+                  </div>
                   <div class="about__text-content">
                     <p>園崎組は埼玉県秩父市にて、主に土木工事にて</p>
                     <p>社会基盤を支える企業になります。</p>
@@ -202,7 +205,7 @@
                     <p>各種資材も生産しており、各業者に提供することで、</p>
                     <p>社会基盤の構築・整備に貢献しております。</p>
                   </div>
-                  <button class="about__button btn">詳しく見る　⇀</button>
+                  <button class="about__button btn">詳しく見る<span>⇀</span></button>
                   <img src="img/image-about.jpg" alt="重機画像" class="about__img">
                 </div>
               </div>
@@ -210,37 +213,45 @@
           </section>
           <section id="works">
             <div class="works-container">
-              <div class="works__background"></div>
-              <h2 class="works__title title-style">WORKS</h2>
-              <div class="works__title--sub">社会を基礎から、変革してきたプロジェクト</div>
-              <div class="works__content">
-                <p>創業以來より培われた確かな技術力で社会を変革する様々な案件を手掛けてきました。</p>
-                <p>その一部を紹介させていただきます。</p>
+              <div class="works-container--inner">
+                <div class="works__background"></div>
+                <div class="works__title-container">
+                  <h2 class="works__title title-style">WORKS</h2>
+                  <div class="nav__line"><span></span></div>
+                </div>
+                <div class="works__title--sub">社会を基礎から、変革してきたプロジェクト</div>
+                <div class="works__content">
+                  <p>創業以來より培われた確かな技術力で社会を変革する様々な案件を手掛けてきました。</p>
+                  <p>その一部を紹介させていただきます。</p>
+                </div>
+                <ul class="works__list">
+                  <li class="works__item">
+                    <div class="works__item-number">01</div>
+                    <img src="img/image-works-1.jpg" alt="実績画像１" class="works__item-img">
+                    <div class="works__item-text">
+                      <p class="works__item-title">施工実績</p>
+                      <p class="works__item-content">東南アジア某国での国家規模のプロジェクトに参画した際の園崎組のプロジェクトストーリーを記載しています。</p>
+                    </div>
+                  </li>
+                  <li class="works__item">
+                    <div class="works__item-number">02</div>
+                    <img src="img/image-works-2.jpg" alt="実績画像２" class="works__item-img">
+                    <div class="works__item-text">
+                      <p class="works__item-title">商品納入実績</p>
+                      <p class="works__item-content">土木・建設資材のプロフェッショナルとして、現場で必要となる各種資材を提供しています。</p>
+                    </div>
+                  </li>
+                </ul>
+                <button class="works__button btn">実績一覧を見る<span>⇀</span></button>
               </div>
-              <ul class="works__list">
-                <li class="works__item">
-                  <div class="works__item-number">01</div>
-                  <img src="img/image-works-1.jpg" alt="実績画像１" class="works__item-img">
-                  <div class="works__item-text">
-                    <p class="works__item-title">施工実績</p>
-                    <p class="works__item-content">東南アジア某国での国家規模のプロジェクトに参画した際の園崎組のプロジェクトストーリーを記載しています。</p>
-                  </div>
-                </li>
-                <li class="works__item">
-                  <div class="works__item-number">02</div>
-                  <img src="img/image-works-2.jpg" alt="実績画像２" class="works__item-img">
-                  <div class="works__item-text">
-                    <p class="works__item-title">商品納入実績</p>
-                    <p class="works__item-content">土木・建設資材のプロフェッショナルとして、現場で必要となる各種資材を提供しています。</p>
-                  </div>
-                </li>
-              </ul>
-              <button class="works__button btn">実績一覧を見る　⇀</button>
             </div>
           </section>
           <section id="recruit">
             <div class="recruit-container">
-              <h2 class="recruit__title title-style">RECRUIT</h2>
+              <div class="recruit__title-container">
+                <h2 class="recruit__title title-style">RECRUIT</h2>
+                <div class="nav__line"><span></span></div>
+              </div>
               <ul class="recruit__list">
                 <li class="recruit__item">
                   <img src="img/image-recruit-1.jpg" alt="採用情報画像１" class="recruit__item-img">
@@ -264,24 +275,27 @@
                   </button>
                 </li>
               </ul>
-              <button class="works__button btn">エントリーはこちら　⇀</button>
+              <button class="works__button btn">エントリーはこちら<span>⇀</span></button>
             </div>
           </section>
           <section id="contact">
             <div class="contact-container">
               <img src="img/bckground-image-contact.jpg" alt="CONTACT背景画像" class="ontact__background-img">
-              <h2 class="contact__title title-style">CONTACT</h2>
+              <div class="contact__title-container">
+                <h2 class="contact__title title-style">CONTACT</h2>
+                <div class="nav__line"><span></span></div>
+              </div>
               <div class="contact__content">
                 <p>園崎組では一般的な施工から特注部品、機械の開発・製造まで一貫して対応しております。</p>
                 <p>お気軽にご連絡ください。</p>
               </div>
               <button class="contact__btn btn-icon">
                 <img class="contact__btn-icon" src="" alt="">
-                <div class="contact__btn-text">施工のご相談　⇀</div>
+                <div class="contact__btn-text">施工のご相談<span>⇀</span></div>
               </button>
               <button class="contact__btn btn-icon">
                 <img class="contact__btn-icon" src="" alt="">
-                <div class="contact__btn-text">特注製作のご相談　⇀</div>
+                <div class="contact__btn-text">特注製作のご相談<span>⇀</span></div>
               </button>
             </div>
           </section>

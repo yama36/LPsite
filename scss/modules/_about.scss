@@ -1,2 +1,50 @@
 @use "../global" as *;
 
+.about-container {
+  width: 100vw;
+  position: relative;
+  margin-bottom: 160px;
+}
+
+.about__img--back {
+  width: 100vw;
+  min-height: 656px;
+  object-fit: cover;
+}
+
+.about-inner {
+  max-width: $max-width;
+}
+
+.about__text {
+  position: absolute;
+  width: 504px;
+  height: 576px;
+  top: 40px;
+  left: calc((100vw - 1016px) / 2);
+  background-color: $white;
+  z-index: 10;
+  padding: 47px 50px;
+}
+
+.about__title-container {
+  @include title("園崎組について");
+  margin-bottom: 32px;
+}
+
+.about__text-content {
+  @include text-content;
+  margin-bottom: 36px;
+}
+
+.about__button {
+  @include btn;
+  margin-bottom: 32px;
+}
+
+.about__img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  margin: 0 auto;
+}

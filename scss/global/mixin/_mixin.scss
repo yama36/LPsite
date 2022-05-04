@@ -31,7 +31,7 @@
 
     span {
       position: absolute;
-      top: -6px;
+      top: -4px;
       left: 10px;
       background-color: $blue;
       width: 1px;
@@ -40,11 +40,11 @@
     }
 
     &::after {
-      width: 150px;
+      width: 200px;
       position: absolute;
       @include font(ll);
       content: $content;
-      color: blue;
+      color: $blue;
       left: 30px;
       bottom: -5px;
     }
@@ -117,11 +117,22 @@
 @mixin btn() {
   display: block;
   width: auto;
+  min-width: 256px;
+  text-align: center;
   padding: 24px 40px;
   background-color: $blue;
   color: $white;
+  line-height: .9;
   border: none;
   box-shadow: 0px 3px 4px 0 rgba($blueBlack, .46);
+
+  span {
+    position: relative;
+    font-size: 20px;
+    margin-left: 16px;
+    top: 3px;
+    left: -1px;
+  }
 }
 
 
@@ -134,4 +145,14 @@
 // レスポンシブ
 @mixin setWidth($w) {
   width: $w;
+}
+
+
+// text-content
+@mixin text-content {
+  line-height: 2;
+
+  p {
+    letter-spacing: .02em;
+  }
 }

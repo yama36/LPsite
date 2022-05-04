@@ -3,7 +3,7 @@
 .services-container {
   width: 100vw;
   background-color: $gray;
-  margin: 160px 0 205px;
+  margin: 160px 0 209px;
   position: relative;
 }
 
@@ -49,12 +49,8 @@
   }
 
   .services__content {
-    line-height: 2;
+    @include text-content;
     margin-bottom: 24px;
-
-    p {
-      letter-spacing: .02em;
-    }
   }
 
   .services__button {
