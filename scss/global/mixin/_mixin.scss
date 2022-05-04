@@ -135,6 +135,11 @@
   }
 }
 
+@mixin btn--typeA {
+  @include btn;
+  justify-content: space-between;
+}
+
 
 // anchor
 @mixin anchor {

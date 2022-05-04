@@ -788,6 +788,7 @@ th {
   background-color: #f0f0f0;
   position: relative;
   z-index: -20;
+  margin-bottom: 160px;
 }
 
 .works__background {
@@ -924,6 +925,98 @@ th {
   margin: 0 auto;
 }
 .works__button span {
+  position: relative;
+  font-size: 20px;
+  margin-left: 16px;
+  top: 3px;
+  left: -1px;
+}
+
+.recruit-container {
+  padding: 80px 0;
+  width: 100vw;
+  background-color: #f0f0f0;
+}
+
+.recruit-container--inner {
+  max-width: 1016px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.recruit__title-container {
+  display: flex;
+  margin-bottom: 32px;
+  justify-content: center;
+  transform: translateX(-48px);
+}
+.recruit__title-container .title-style {
+  font-size: 4.8rem;
+  line-height: 0.75;
+  font-weight: bold;
+}
+.recruit__title-container .nav__line {
+  width: 21px;
+  height: 24px;
+  margin: auto 8px 0;
+  position: relative;
+}
+.recruit__title-container .nav__line span {
+  position: absolute;
+  top: -4px;
+  left: 10px;
+  background-color: #4b6cb7;
+  width: 1px;
+  height: 32px;
+  transform: rotate(40deg);
+}
+.recruit__title-container .nav__line::after {
+  width: 200px;
+  position: absolute;
+  font-size: 2.4rem;
+  content: "採用情報";
+  color: #4b6cb7;
+  left: 30px;
+  bottom: -5px;
+}
+.recruit__list {
+  display: flex;
+}
+.recruit__list .recruit__item-btn {
+  display: block;
+  width: auto;
+  min-width: 256px;
+  text-align: center;
+  padding: 24px 40px;
+  background-color: #4b6cb7;
+  color: #FFFFFF;
+  line-height: 0.9;
+  border: none;
+  box-shadow: 0px 3px 4px 0 rgba(24, 40, 72, 0.46);
+  justify-content: space-between;
+}
+.recruit__list .recruit__item-btn span {
+  position: relative;
+  font-size: 20px;
+  margin-left: 16px;
+  top: 3px;
+  left: -1px;
+}
+
+.recruit__button {
+  display: block;
+  width: auto;
+  min-width: 256px;
+  text-align: center;
+  padding: 24px 40px;
+  background-color: #4b6cb7;
+  color: #FFFFFF;
+  line-height: 0.9;
+  border: none;
+  box-shadow: 0px 3px 4px 0 rgba(24, 40, 72, 0.46);
+  margin: 0 auto;
+}
+.recruit__button span {
   position: relative;
   font-size: 20px;
   margin-left: 16px;
