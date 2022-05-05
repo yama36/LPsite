@@ -981,6 +981,20 @@ th {
 }
 .recruit__list {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 169px;
+}
+.recruit__list .recruit__item {
+  position: relative;
+}
+.recruit__list .recruit__item:nth-of-type(1) {
+  transform: translateY(105px);
+}
+.recruit__list .recruit__item:nth-of-type(2) {
+  transform: translate(-5px, 65px);
+}
+.recruit__list .recruit__item:nth-of-type(3) {
+  transform: translate(-8px, 25px);
 }
 .recruit__list .recruit__item-btn {
   display: block;
@@ -993,7 +1007,17 @@ th {
   line-height: 0.9;
   border: none;
   box-shadow: 0px 3px 4px 0 rgba(24, 40, 72, 0.46);
+  display: flex;
+  background-color: rgba(25, 25, 25, 0.64);
   justify-content: space-between;
+  min-width: none;
+  width: 264px;
+  height: 56px;
+  padding: 20px 16px;
+  box-shadow: none;
+  position: absolute;
+  bottom: -25px;
+  right: -8px;
 }
 .recruit__list .recruit__item-btn span {
   position: relative;
@@ -1001,6 +1025,10 @@ th {
   margin-left: 16px;
   top: 3px;
   left: -1px;
+}
+.recruit__list .recruit__item-btn span {
+  top: 1px;
+  left: 2px;
 }
 
 .recruit__button {

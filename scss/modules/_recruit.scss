@@ -21,11 +21,29 @@
 
 .recruit__list {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 169px;
 
   .recruit__item {
+    position: relative;
+
+    &:nth-of-type(1) {
+      transform: translateY(105px);
+    }
+
+    &:nth-of-type(2) {
+      transform: translate(-5px, 65px);
+    }
+
+    &:nth-of-type(3) {
+      transform: translate(-8px, 25px);
+    }
 
     &-btn {
       @include btn--typeA;
+      position: absolute;
+      bottom: -25px;
+      right: -8px;
     }
   }
 }
