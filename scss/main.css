@@ -1051,3 +1051,74 @@ th {
   top: 3px;
   left: -1px;
 }
+
+.contact-container {
+  width: 100vw;
+  position: relative;
+}
+.contact-container img {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.contact-container--inner {
+  max-width: 1016px;
+  position: absolute;
+  top: 0;
+  margin-left: calc((100vw - 1016px) / 2);
+}
+
+.contact__title-container {
+  display: flex;
+  width: 100vw;
+  margin: 77px;
+  transform: translateX(-68px);
+  justify-content: center;
+  color: #FFFFFF;
+}
+.contact__title-container .title-style {
+  font-size: 4.8rem;
+  line-height: 0.75;
+  font-weight: bold;
+}
+.contact__title-container .nav__line {
+  width: 21px;
+  height: 24px;
+  margin: auto 8px 0;
+  position: relative;
+}
+.contact__title-container .nav__line span {
+  position: absolute;
+  top: -4px;
+  left: 10px;
+  background-color: #4b6cb7;
+  width: 1px;
+  height: 32px;
+  transform: rotate(40deg);
+}
+.contact__title-container .nav__line::after {
+  width: 200px;
+  position: absolute;
+  font-size: 2.4rem;
+  content: "お問い合わせ";
+  color: #4b6cb7;
+  left: 30px;
+  bottom: -5px;
+}
+.contact__title-container .nav__line span {
+  background-color: #FFFFFF;
+}
+.contact__title-container .nav__line::after {
+  color: #FFFFFF;
+}
+
+.contact__content {
+  line-height: 2;
+  margin-bottom: 48px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.contact__content p {
+  letter-spacing: 0.02em;
+}

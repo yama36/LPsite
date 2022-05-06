@@ -1,1 +1,45 @@
 @use "../global" as *;
+
+.contact-container {
+  width: 100vw;
+  position: relative;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+}
+
+.contact-container--inner {
+  max-width: $max-width;
+  position: absolute;
+  top: 0;
+  margin-left: calc((100vw - 1016px) / 2);
+}
+
+.contact__title-container {
+  @include title("お問い合わせ");
+  width: 100vw;
+  margin: 77px;
+  transform: translateX(-68px);
+  justify-content: center;
+  color: $white;
+
+  .nav__line {
+    span {
+      background-color: $white;
+    }
+
+    &::after {
+      color: $white;
+    }
+  }
+}
+
+.contact__content {
+  @include text-content;
+  margin-bottom: 48px;
+  color: $white;
+  text-align: center;
+}
