@@ -1,1 +1,71 @@
 @use "../global" as *;
+
+#footer {
+  background-color: $blueBlack;
+  width: 100vw;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: $max-width;
+  padding: 80px 0 96px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.footer__title {
+  margin-bottom: 38px;
+}
+
+.footer__address {
+  color: $white;
+
+  p {
+    margin-bottom: 19px;
+    letter-spacing: .02px;
+
+    span {
+      display: inline-block;
+      margin-left: 4px;
+      letter-spacing: 4px;
+    }
+  }
+}
+
+.footer__nav {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  color: $white;
+  position: absolute;
+  top: 180px;
+  right: 0;
+
+  &-list {
+    display: flex;
+    flex-direction: column-reverse;
+    letter-spacing: 3px;
+  }
+
+  &-item {
+    margin-left: 18px;
+
+    &:nth-of-type(5) {
+      margin-left: 76px;
+    }
+  }
+}
+
+.footer-copy {
+  &--inner {
+    width: 100%;
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+
+  height: 60px;
+  width: 100vw;
+  background-color: $black;
+  color: $white;
+  line-height: 60px;
+  letter-spacing: -0.2px;
+}

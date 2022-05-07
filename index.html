@@ -14,12 +14,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap"
     rel="stylesheet">
 
   <!-- css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="scss/main.css" />
+
 </head>
 
 
@@ -49,14 +50,14 @@
           <div class="nav__line"><span></span></div>
           <li class="nav__item">
             <a href="#about">
-              <div>岡崎組について</div>
+              <div>園崎組について</div>
               <div>ABOUT</div>
             </a>
           </li>
           <div class="nav__line"><span></span></div>
           <li class="nav__item">
             <a href="#works">
-              <div>岡崎組の実績</div>
+              <div>園崎組の実績</div>
               <div>WORKS</div>
             </a>
           </li>
@@ -75,7 +76,7 @@
             </a>
           </li>
         </ul>
-  </nav>
+      </nav>
       <div class="global-contents">
         <header id="header">
           <nav class="header-nav nav--top">
@@ -101,14 +102,14 @@
               <div class="nav__line"><span></span></div>
               <li class="nav__item">
                 <a href="#about">
-                  <div>岡崎組について</div>
+                  <div>園崎組について</div>
                   <div>ABOUT</div>
                 </a>
               </li>
               <div class="nav__line"><span></span></div>
               <li class="nav__item">
                 <a href="#works">
-                  <div>岡崎組の実績</div>
+                  <div>園崎組の実績</div>
                   <div>WORKS</div>
                 </a>
               </li>
@@ -130,40 +131,51 @@
           </nav>
           <div class="top-container">
             <div class="top__background">
-              <div class="top__background--mask"></div>
-              <div class="swiper">
-
+              <div class="top__background--mask">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <!-- スライド -->
+                    <div class="swiper-slide"><img src="img/top-image-1.png" alt="トップ画像１" class="swiper-img1"></div>
+                    <div class="swiper-slide"><img src="img/top-image-2.png" alt="トップ画像２" class="swiper-img2"></div>
+                    <div class="swiper-slide"><img src="img/top-image-3.png" alt="トップ画像３" class="swiper-img3"></div>
+                  </div>
+                </div>
               </div>
             </div>
-            <h1 class="top__title">
-              <span>CHALLENGE</span>
-              <span>FROM THE BOTTOM</span>
-            </h1>
-            <h2 class="top__discription1">社会の基礎を支え</h2>
-            <h2 class="top__discription2">基礎から世界を変革する会社</h2>
+            <div class="top__text-container">
+              <h1 class="top__title">
+                <div>CHALLENGE</div>
+                <div>FROM THE BOTTOM</div>
+              </h1>
+                <h2 class="top__discription">社会の基礎を支え</h2>
+                <h2 class="top__discription">基礎から世界を変革する会社</h2>
+            </div>
             <div class="news">
-              <h2 class="news__title title-style">NEWS</h2>
+              <h2 class="news__title">NEWS</h2>
               <div class="news__content">
                 <div class="news__content--time">2021.06.12</div>
-                <div class="news__content--info">お知らせ</div>
-                <div class="news__content--title">お知らせ</div>
+                <div class="news__content--category">お知らせ</div>
+                <div class="news__content--title">新サイトを公開しました。</div>
               </div>
-              <div class="news__arrow">&rarr;</div>
+              <div class="news__arrow">⇀</div>
             </div>
           </div>
         </header>
         <main id="main">
           <section id="services">
             <div class="services-container">
+              <div class="services__background"></div>
+              <img src="img/image-services.jpg" alt="事業内容画像" class="services__img">
               <div class="services-inner">
-                <div class="services__background"></div>
-                <img src="img/image-services.jpg" alt="事業内容画像" class="services__img">
                 <div class="services__text">
-                  <h2 class="services__title title-style">SERVICES</h2>
+                  <div class="services__title-container">
+                    <h2 class="services__title title-style">SERVICES</h2>
+                    <div class="nav__line"><span></span></div>
+                  </div>
                   <div class="services__title--sub">
                     <h3>
-                      <span>人々の生活基盤を</span>
-                      <span>世界最高峰の技術で支える</span>
+                      <div>人々の生活基盤を</div>
+                      <div>世界最高峰の技術で支える</div>
                     </h3>
                   </div>
                   <div class="services__content">
@@ -172,17 +184,20 @@
                     <p>世界各国の技術者、研究者と共に次世代の建設機材の研究開発事業も</p>
                     <p>同時に行うことで、業界の進化の促進を担っています。</p>
                   </div>
-                  <button class="services__button btn">事業内容を更に知る　⇀</button>
+                  <button class="services__button btn">事業内容を更に知る<span>⇀</span></button>
                 </div>
               </div>
             </div>
           </section>
           <section id="about">
             <div class="about-container">
+              <img src="img/background-image-about.jpg" alt="ABOUT背景画像" class="about__img--back">
               <div class="about-inner">
-                <img src="img/background-image-about.jpg" alt="ABOUT背景画像" class="about__img--back">
                 <div class="about__text">
-                  <h2 class="about__title title-style">ABOUT</h2>
+                  <div class="about__title-container">
+                    <h2 class="about__title title-style">ABOUT</h2>
+                    <div class="nav__line"><span></span></div>
+                  </div>
                   <div class="about__text-content">
                     <p>園崎組は埼玉県秩父市にて、主に土木工事にて</p>
                     <p>社会基盤を支える企業になります。</p>
@@ -190,7 +205,7 @@
                     <p>各種資材も生産しており、各業者に提供することで、</p>
                     <p>社会基盤の構築・整備に貢献しております。</p>
                   </div>
-                  <button class="about__button btn">詳しく見る　⇀</button>
+                  <button class="about__button btn">詳しく見る<span>⇀</span></button>
                   <img src="img/image-about.jpg" alt="重機画像" class="about__img">
                 </div>
               </div>
@@ -198,120 +213,129 @@
           </section>
           <section id="works">
             <div class="works-container">
-              <div class="works__background"></div>
-              <h2 class="works__title title-style">WORKS</h2>
-              <div class="works__title--sub">社会を基礎から、変革してきたプロジェクト</div>
-              <div class="works__content">
-                <p>創業以來より培われた確かな技術力で社会を変革する様々な案件を手掛けてきました。</p>
-                <p>その一部を紹介させていただきます。</p>
+              <div class="works-container--inner">
+                <div class="works__background"></div>
+                <div class="works__title-container">
+                  <h2 class="works__title title-style">WORKS</h2>
+                  <div class="nav__line"><span></span></div>
+                </div>
+                <div class="works__title--sub">社会を基礎から、変革してきたプロジェクト</div>
+                <div class="works__content">
+                  <p>創業以來より培われた確かな技術力で社会を変革する様々な案件を手掛けてきました。</p>
+                  <p>その一部を紹介させていただきます。</p>
+                </div>
+                <ul class="works__list">
+                  <li class="works__item">
+                    <div class="works__item-number">01</div>
+                    <img src="img/image-works-1.jpg" alt="実績画像１" class="works__item-img">
+                    <div class="works__item-text">
+                      <p class="works__item-title">施工実績</p>
+                      <p class="works__item-content">東南アジア某国での国家規模のプロジェクトに参画した際の園崎組のプロジェクトストーリーを記載しています。</p>
+                    </div>
+                  </li>
+                  <li class="works__item">
+                    <div class="works__item-number">02</div>
+                    <img src="img/image-works-2.jpg" alt="実績画像２" class="works__item-img">
+                    <div class="works__item-text">
+                      <p class="works__item-title">商品納入実績</p>
+                      <p class="works__item-content">土木・建設資材のプロフェッショナルとして、現場で必要となる各種資材を提供しています。</p>
+                    </div>
+                  </li>
+                </ul>
+                <button class="works__button btn">実績一覧を見る<span>⇀</span></button>
               </div>
-              <ul class="works__list">
-                <li class="works__item">
-                  <div class="works__item-number">01</div>
-                  <img src="img/image-works-1.jpg" alt="実績画像１" class="works__item-img">
-                  <div class="works__item-text">
-                    <p class="works__item-title">施工実績</p>
-                    <p class="works__item-content">東南アジア某国での国家規模のプロジェクトに参画した際の園崎組のプロジェクトストーリーを記載しています。</p>
-                  </div>
-                </li>
-                <li class="works__item">
-                  <div class="works__item-number">02</div>
-                  <img src="img/image-works-2.jpg" alt="実績画像２" class="works__item-img">
-                  <div class="works__item-text">
-                    <p class="works__item-title">商品納入実績</p>
-                    <p class="works__item-content">土木・建設資材のプロフェッショナルとして、現場で必要となる各種資材を提供しています。</p>
-                  </div>
-                </li>
-              </ul>
-              <button class="works__button btn">実績一覧を見る　⇀</button>
             </div>
           </section>
           <section id="recruit">
             <div class="recruit-container">
-              <h2 class="recruit__title title-style">RECRUIT</h2>
-              <ul class="recruit__list">
-                <li class="recruit__item">
-                  <img src="img/image-recruit-1.jpg" alt="採用情報画像１" class="recruit__item-img">
-                  <button class="recruit__item-btn btn--trans">
-                    <p>園崎組を知る</p>
-                    <span>⇀</span>
-                  </button>
-                </li>
-                <li class="recruit__item">
-                  <img src="img/image-recruit-2.jpg" alt="採用情報画像２" class="recruit__item-img">
-                  <button class="recruit__item-btn btn--trans">
-                    <p>園崎組の一日</p>
-                    <span>⇀</span>
-                  </button>
-                </li>
-                <li class="recruit__item">
-                  <img src="img/image-recruit-3.jpg" alt="採用情報画像３" class="recruit__item-img">
-                  <button class="recruit__item-btn btn--trans">
-                    <p>求める人物像</p>
-                    <span>⇀</span>
-                  </button>
-                </li>
-              </ul>
-              <button class="works__button btn">エントリーはこちら　⇀</button>
+              <div class="recruit-container--inner">
+                <div class="recruit__title-container">
+                  <h2 class="recruit__title title-style">RECRUIT</h2>
+                  <div class="nav__line"><span></span></div>
+                </div>
+                <ul class="recruit__list">
+                  <li class="recruit__item">
+                    <img src="img/image-recruit-1.jpg" alt="採用情報画像１" class="recruit__item-img">
+                    <button class="recruit__item-btn btn--trans">園崎組を知る<span>⇀</span></button>
+                  </li>
+                  <li class="recruit__item">
+                    <img src="img/image-recruit-2.jpg" alt="採用情報画像２" class="recruit__item-img">
+                    <button class="recruit__item-btn btn--trans">園崎組の一日<span>⇀</span></button>
+                  </li>
+                  <li class="recruit__item">
+                    <img src="img/image-recruit-3.jpg" alt="採用情報画像３" class="recruit__item-img">
+                    <button class="recruit__item-btn btn--trans">求める人物像<span>⇀</span></button>
+                  </li>
+                </ul>
+                <button class="recruit__button btn">エントリーはこちら<span>⇀</span></button>
+              </div>
             </div>
           </section>
           <section id="contact">
             <div class="contact-container">
               <img src="img/bckground-image-contact.jpg" alt="CONTACT背景画像" class="ontact__background-img">
-              <h2 class="contact__title title-style">CONTACT</h2>
-              <div class="contact__content">
-                <p>園崎組では一般的な施工から特注部品、機械の開発・製造まで一貫して対応しております。</p>
-                <p>お気軽にご連絡ください。</p>
+              <div class="contact-container--inner">
+                <div class="contact__title-container">
+                  <h2 class="contact__title title-style">CONTACT</h2>
+                  <div class="nav__line"><span></span></div>
+                </div>
+                <div class="contact__content">
+                  <p>園崎組では一般的な施工から特注部品、機械の開発・製造まで一貫して対応しております。</p>
+                  <p>お気軽にご連絡ください。</p>
+                </div>
+                <div class="contact__btn-container">
+                  <button class="contact__btn btn-icon">
+                    <img class="contact__btn-icon" src="img/Backhoe.svg" alt="ショベルカーアイコン">
+                    <div class="contact__btn-text">施工のご相談<span>⇀</span></div>
+                  </button>
+                  <button class="contact__btn btn-icon">
+                    <img class="contact__btn-icon" src="img/Factory.svg" alt="工場アイコン">
+                    <div class="contact__btn-text">特注製作のご相談<span>⇀</span></div>
+                  </button>
+                </div>
               </div>
-              <button class="contact__btn btn-icon">
-                <img class="contact__btn-icon" src="" alt="">
-                <div class="contact__btn-text">施工のご相談　⇀</div>
-              </button>
-              <button class="contact__btn btn-icon">
-                <img class="contact__btn-icon" src="" alt="">
-                <div class="contact__btn-text">特注製作のご相談　⇀</div>
-              </button>
             </div>
           </section>
         </main>
         <footer id="footer">
-          <div class="footer__title">
-            <img src="img/logo/PC/logo-w-2.svg" alt="logo" />
-          </div>
-          <div class="footer__address" data-aos="fade-up" data-aos-duration="1500">
-            <div>
-              <p>〒000-0000</p>
-              <p class="footer__address1">埼玉県秩父市×××××××××××</p>
+          <div class="footer-container">
+            <div class="footer__title">
+              <img src="img/logo/PC/logo-w-2.svg" alt="logo" />
             </div>
-            <div>
+            <div class="footer__address">
+              <p>株式会社 園崎組</p>
+              <p>〒000-000</p>
+              <p>埼玉県秩父市<span>✕✕✕✕✕✕✕✕✕✕✕</span></p>
               <p>TEL 0494-00-0000</p>
               <p>FAX 000-0000-0000</p>
             </div>
+            <nav class="footer__nav">
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a href="#">トップ</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#services">事業内容</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#about">園崎組について</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#works">園崎組の実績</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#recruit">採用</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#contact">お問い合わせ</a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <nav class="footer__nav">
-            <ul class="footer__nav-list" data-aos="fade-up" data-aos-duration="1500">
-              <li class="footer__nav__item">
-                <a href="#">トップ</a>
-              </li>
-              <li class="footer__nav__item">
-                <a href="#services">事業内容</a>
-              </li>
-              <li class="footer__nav__item">
-                <a href="#about">岡崎組について</a>
-              </li>
-              <li class="footer__nav__item">
-                <a href="#works">岡崎組の実績</a>
-              </li>
-              <li class="footer__nav__item">
-                <a href="#recruit">採用</a>
-              </li>
-              <li class="footer__nav__item">
-                <a href="#contact">お問い合わせ</a>
-              </li>
-            </ul>
-          </nav>
           <div class="footer-copy">
-            <small>Copyright © SONOZAKI CO.LTD All Rights Reserved.</small>
+            <div class="footer-copy--inner">
+              <small>Copyright © SONOZAKI CO.LTD All Rights Reserved.</small>
+            </div>
           </div>
         </footer>
       </div>
@@ -321,7 +345,8 @@
 
   <!-- JavaScript -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
 </body>
 
 </html>

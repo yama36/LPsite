@@ -1,0 +1,54 @@
+@use "../global" as *;
+
+.recruit-container {
+  padding: 80px 0;
+  width: 100vw;
+  background-color: $gray;
+}
+
+.recruit-container--inner {
+  max-width: $max-width;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.recruit__title-container {
+  @include title("採用情報");
+  margin-bottom: 32px;
+  justify-content: center;
+  transform: translateX(-48px);
+}
+
+.recruit__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 169px;
+
+  .recruit__item {
+    position: relative;
+
+    &:nth-of-type(1) {
+      transform: translateY(105px);
+    }
+
+    &:nth-of-type(2) {
+      transform: translate(-5px, 65px);
+    }
+
+    &:nth-of-type(3) {
+      transform: translate(-8px, 25px);
+    }
+
+    &-btn {
+      @include btn--typeA;
+      position: absolute;
+      bottom: -25px;
+      right: -8px;
+    }
+  }
+}
+
+.recruit__button {
+  @include btn;
+  margin: 0 auto;
+}
