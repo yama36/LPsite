@@ -152,6 +152,33 @@
   }
 }
 
+@mixin btn--typeIcon($color) {
+  @include btn;
+  width: 320px;
+  height: 72px;
+  line-height: 0;
+  padding: 0;
+  background-color: $color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .contact__btn-icon {
+    width: 24px;
+    height: 17px;
+    margin-right: 12px;
+  }
+
+  .contact__btn-text {
+    margin-right: 16px;
+  }
+
+  span {
+    margin-left: 0;
+    left: 20px;
+  }
+}
+
 
 // anchor
 @mixin anchor {

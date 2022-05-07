@@ -2,6 +2,7 @@
 
 html {
   font-size: 62.5%; /* font:10px */
+  width: 100vw;
 }
 
 
@@ -15,4 +16,8 @@ body {
     height: 100%;
     position: fixed;
   }
+}
+
+main {
+  overflow: hidden;
 }
