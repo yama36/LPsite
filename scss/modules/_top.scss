@@ -28,12 +28,12 @@
   top: 0;
   left: calc((100vw - $max-width) / 2);
   z-index: 100;
+  padding-top: 100px;
 
   .top__title {
     @include font(96, 112);
     font-weight: 900;
     color: $white;
-    padding-top: 100px;
     text-shadow: 4px 4px 4px rgba($color: #182848, $alpha: .5);
     letter-spacing: 2px;
   }

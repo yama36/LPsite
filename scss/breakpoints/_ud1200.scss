@@ -1,0 +1,13 @@
+@use "../global" as *;
+
+@media (max-width: 1200px) {
+  // top
+  .top__text-container {
+    width: 90%;
+    padding-top: 50px;
+
+    .top__title {
+      @include font(72);
+    }
+  }
+}
