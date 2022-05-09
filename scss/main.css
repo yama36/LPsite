@@ -1288,9 +1288,48 @@ th {
 
 @media (max-width: 1200px) {
   .top__text-container {
+    width: 90%;
     padding-top: 50px;
+    left: 7.5vw;
   }
   .top__text-container .top__title {
     font-size: 7.2rem;
+  }
+
+  .news {
+    max-width: 85vw;
+  }
+
+  .services-inner {
+    max-width: 85vw;
+  }
+
+  .about-inner {
+    max-width: 85vw;
+  }
+
+  .about__text {
+    left: 7.5vw;
+  }
+
+  .works-container--inner {
+    max-width: 85vw;
+  }
+
+  .recruit-container--inner {
+    max-width: 85vw;
+  }
+
+  .contact-container--inner {
+    max-width: 85vw;
+    margin-left: 7.5vw;
+  }
+
+  .footer-container {
+    max-width: 85vw;
+  }
+
+  .footer-copy--inner {
+    max-width: 85vw;
   }
 }

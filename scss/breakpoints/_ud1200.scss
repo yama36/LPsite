@@ -1,12 +1,63 @@
 @use "../global" as *;
 
+$max-width: 85vw;
+
 @media (max-width: 1200px) {
   // top
   .top__text-container {
+    width: 90%;
     padding-top: 50px;
+    left: calc((100vw - $max-width) / 2);
 
     .top__title {
       @include font(72);
     }
   }
+
+  .news {
+    max-width: $max-width;
+  }
+
+  // services
+  .services-inner {
+    max-width: $max-width;
+  }
+
+  // about
+  .about-inner {
+    max-width: $max-width;
+  }
+
+  .about__text {
+    left: calc((100vw - $max-width) / 2);
+  }
+
+  // works
+  .works-container--inner {
+    max-width: $max-width;
+  }
+
+  // recruit
+  .recruit-container--inner {
+    max-width: $max-width;
+  }
+
+
+  // contact
+  .contact-container--inner {
+    max-width: $max-width;
+    margin-left: calc((100vw - $max-width) / 2);
+  }
+
+  // footer
+  .footer-container {
+    max-width: $max-width;
+  }
+
+  .footer-copy {
+    &--inner {
+      max-width: $max-width;
+    }
+  }
+
 }
