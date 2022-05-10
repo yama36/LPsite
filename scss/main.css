@@ -1065,8 +1065,9 @@ th {
   width: 100vw;
   position: relative;
 }
-.contact-container img {
+.contact-container .ontact__background-img {
   width: 100%;
+  min-height: 411px;
   object-fit: cover;
   position: relative;
 }
@@ -1289,7 +1290,6 @@ th {
 @media (max-width: 1200px) {
   .top__text-container {
     width: 90%;
-    padding-top: 50px;
     left: 7.5vw;
   }
   .top__text-container .top__title {
@@ -1302,6 +1302,14 @@ th {
 
   .services-inner {
     max-width: 85vw;
+  }
+
+  .services__img {
+    width: 40%;
+  }
+
+  .services__text {
+    width: 55%;
   }
 
   .about-inner {

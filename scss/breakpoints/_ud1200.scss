@@ -6,7 +6,6 @@ $max-width: 85vw;
   // top
   .top__text-container {
     width: 90%;
-    padding-top: 50px;
     left: calc((100vw - $max-width) / 2);
 
     .top__title {
@@ -21,6 +20,14 @@ $max-width: 85vw;
   // services
   .services-inner {
     max-width: $max-width;
+  }
+
+  .services__img {
+    width: 40%;
+  }
+
+  .services__text {
+    width: 55%;
   }
 
   // about
