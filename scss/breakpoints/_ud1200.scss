@@ -7,9 +7,19 @@ $max-width: 85vw;
   .top__text-container {
     width: 90%;
     left: calc((100vw - $max-width) / 2);
+    padding-top: 50px;
 
     .top__title {
       @include font(72);
+    }
+  }
+
+  .top__discription-container {
+    display: flex;
+
+    .top__discription {
+      @include font(ll);
+      margin-top: 16px;
     }
   }
 
@@ -48,6 +58,27 @@ $max-width: 85vw;
   .recruit-container--inner {
     max-width: $max-width;
   }
+
+  .recruit__list {
+    justify-content: center;
+    .recruit__item {
+      margin-right: 48px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      &-img {
+        width: 240px;
+      }
+
+      &-btn {
+        width: 200px;
+        min-width: 200px;
+      }
+    }
+  }
+
 
 
   // contact

@@ -1291,9 +1291,18 @@ th {
   .top__text-container {
     width: 90%;
     left: 7.5vw;
+    padding-top: 50px;
   }
   .top__text-container .top__title {
     font-size: 7.2rem;
+  }
+
+  .top__discription-container {
+    display: flex;
+  }
+  .top__discription-container .top__discription {
+    font-size: 2.4rem;
+    margin-top: 16px;
   }
 
   .news {
@@ -1326,6 +1335,23 @@ th {
 
   .recruit-container--inner {
     max-width: 85vw;
+  }
+
+  .recruit__list {
+    justify-content: center;
+  }
+  .recruit__list .recruit__item {
+    margin-right: 48px;
+  }
+  .recruit__list .recruit__item:last-of-type {
+    margin-right: 0;
+  }
+  .recruit__list .recruit__item-img {
+    width: 240px;
+  }
+  .recruit__list .recruit__item-btn {
+    width: 200px;
+    min-width: 200px;
   }
 
   .contact-container--inner {
