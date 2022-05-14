@@ -1433,10 +1433,155 @@ th {
     transform: rotate(-45deg);
   }
 
+  .top__background .swiper-slide img {
+    height: 620px;
+    object-fit: cover;
+  }
+
+  .top__text-container .top__title span {
+    margin-right: calc(100% - 250px);
+  }
+
+  .top__discription-container {
+    flex-direction: column;
+  }
+
+  .news {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0);
+    bottom: 48px;
+  }
+  .news .news__title {
+    color: #FFFFFF;
+    width: 100px;
+    line-height: 1.5;
+    padding-left: 12px;
+  }
+  .news .news__title::after {
+    content: "";
+    width: 100px;
+    border-bottom: 50px solid #182848;
+    border-left: none;
+    border-right: 25px solid rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+  }
+  .news .news__content {
+    width: 100%;
+    background-color: #FFFFFF;
+    border: #182848 solid 1px;
+    padding: 16px 16px;
+    justify-content: left;
+  }
+  .news .news__content::after {
+    display: none;
+  }
+  .news .news__content--time {
+    margin-left: 0;
+  }
+  .news .news__arrow {
+    display: none;
+  }
+
+  .services-container {
+    padding-bottom: 20px;
+  }
+
+  .services__inner {
+    position: relative;
+  }
+
+  .services__img {
+    top: 120px;
+  }
+
+  .services__title-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-70%);
+  }
+
+  .services__title--sub {
+    padding-top: 120px;
+  }
+
+  .services__text .services__button {
+    bottom: 0;
+    margin-bottom: 24px;
+  }
+
   .about__text {
     width: 70%;
     min-width: 504px;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .works-container--inner {
+    padding: 40px 0;
+  }
+
+  .recruit__list {
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+  .recruit__list .recruit__item {
+    margin: 0;
+    transform: translate(0) !important;
+    margin: 0 auto;
+    margin-bottom: 64px;
+  }
+  .recruit__list .recruit__item:first-of-type {
+    margin-left: 0;
+  }
+  .recruit__list .recruit__item-img {
+    width: 500px;
+    height: 320px;
+    object-fit: cover;
+  }
+  .recruit__list .recruit__item-btn {
+    display: block;
+    width: auto;
+    min-width: 256px;
+    text-align: center;
+    padding: 24px 40px;
+    background-color: #4b6cb7;
+    color: #FFFFFF;
+    line-height: 0.9;
+    border: none;
+    box-shadow: 0px 3px 4px 0 rgba(24, 40, 72, 0.46);
+    display: flex;
+    background-color: rgba(25, 25, 25, 0.64);
+    justify-content: space-between;
+    min-width: none;
+    width: 264px;
+    height: 56px;
+    padding: 20px 16px;
+    box-shadow: none;
+    position: absolute;
+    bottom: -25px;
+    right: -25px;
+  }
+  .recruit__list .recruit__item-btn span {
+    position: relative;
+    font-size: 20px;
+    margin-left: 16px;
+    top: 3px;
+    left: -1px;
+  }
+  .recruit__list .recruit__item-btn span {
+    top: 1px;
+    left: 2px;
+  }
+
+  .contact__btn-container .contact__btn:nth-of-type(2) {
+    margin-left: 32px;
+  }
+
+  .footer__nav-item:nth-of-type(5) {
+    margin-left: 18px;
   }
 }
