@@ -475,8 +475,11 @@ th {
   background: linear-gradient(to right, #4b6cb7, #182848);
   width: 100vw;
 }
-.top__background .swiper-slide img {
+.top__background .swiper-slide .swiper-img {
   width: 100%;
+}
+.top__background .swiper-slide .swiper-img--SP {
+  display: none;
 }
 
 .top__text-container {
@@ -1393,9 +1396,10 @@ th {
   }
   .header-nav .HB__item {
     margin-bottom: 40px;
+    font-size: 20px;
   }
   .header-nav .HB__item div:last-of-type {
-    font-size: 10px;
+    font-size: 14px;
     margin-top: 8px;
   }
   .header-nav .HB {
@@ -1583,5 +1587,84 @@ th {
 
   .footer__nav-item:nth-of-type(5) {
     margin-left: 18px;
+  }
+}
+@media (max-width: 600px) {
+  .header-nav {
+    height: 56px;
+  }
+  .header-nav .title-container {
+    margin-left: 20px;
+  }
+  .header-nav .title-container .logo {
+    width: 120px;
+    height: 26px;
+  }
+  .header-nav .HB__list {
+    padding: 80px 0;
+    margin-top: 56px;
+    transition: 0.3s;
+  }
+  .header-nav .HB__item {
+    transition: 0.3s;
+    margin-bottom: 44px;
+    font-size: 20px;
+    line-height: 0.7;
+  }
+  .header-nav .HB__item div:last-of-type {
+    font-size: 14px;
+  }
+  .header-nav .HB__item:hover {
+    color: #182848;
+  }
+  .header-nav .HB {
+    margin-right: 20px;
+  }
+  .header-nav .HB__btn span {
+    width: 20px;
+    height: 2px;
+    margin-bottom: 5px;
+  }
+
+  .top__background .swiper-slide .swiper-img {
+    display: none;
+  }
+  .top__background .swiper-slide .swiper-img--SP {
+    display: inline;
+  }
+
+  .top__text-container {
+    max-width: 90vw;
+    left: 5vw;
+    z-index: 100;
+    padding-top: 100px;
+  }
+  .top__text-container .top__title {
+    font-size: 4.8rem;
+    line-height: 1.2083333333;
+    letter-spacing: 2px;
+  }
+  .top__text-container .top__discription {
+    font-size: 1.973rem;
+    padding: 0 25px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    z-index: 10;
+  }
+  .top__text-container .top__discription::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: skewX(-40deg);
+    background-color: #FFFFFF;
+    z-index: -10;
+    box-shadow: 8px 4px #182848;
+  }
+  .top__text-container .top__discription:nth-of-type(2) {
+    margin-top: 16px;
   }
 }
