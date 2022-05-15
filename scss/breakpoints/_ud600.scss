@@ -162,59 +162,113 @@
   }
 
 // services
-.services-container {
-  margin: 120px 0 208px;
-  padding-bottom: 24px;
-}
+  .services-container {
+    margin: 120px 0 120px;
+    padding-bottom: 24px;
+  }
 
-.services__background {
-  right: -104px;
-  width: 60vw;
-  height: 100%;
-  transform: skewX(-25deg);
-}
+  .services__background {
+    right: -104px;
+    width: 60vw;
+    height: 100%;
+    transform: skewX(-25deg);
+  }
 
-.services-inner {
-  max-width: $max-width;
+  .services-inner {
+    max-width: $max-width;
 
-}
+  }
 
-.services__img {
-  position: relative;
-  top: 0;
-  width: 100vw;
-  height: 248px;
-}
-
-.services__text {
-  display: flex;
-  flex-direction: column;
-  max-width: $max-width;
-  margin: 0 auto;
-  width: 100%;
-
-  .services__title-container {
+  .services__img {
     position: relative;
-    transform: none;
-    left: 0;
-    padding-bottom: 32px;
+    top: 0;
+    width: 100vw;
+    height: 248px;
   }
 
-  .services__title--sub {
-    @include font(24);
-    padding: 0;
-  }
+  .services__text {
+    display: flex;
+    flex-direction: column;
+    max-width: $max-width;
+    margin: 0 auto;
+    width: 100%;
 
-  .services__content {
-    margin-bottom: 27px;
+    .services__title-container {
+      position: relative;
+      transform: none;
+      left: 0;
+      padding-bottom: 32px;
+    }
 
-    p {
-      display: inline;
+    .services__title--sub {
+      @include font(24);
+      padding: 0;
+    }
+
+    .services__content {
+      margin-bottom: 27px;
+
+      p {
+        display: inline;
+      }
     }
   }
-}
 
+  // about
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    max-width: $max-width;
+    margin: 0 auto;
+  }
 
+  .about__img--back {
+    width: 100%;
+    height: 248px;
+  }
 
+  .about-inner {
+    position: relative;
+    max-width: $max-width;
 
+    .about__text {
+      max-width: $max-width;
+      min-width: 0;
+      width: 100%;
+      transform: translate(0);
+      position: relative;
+      top: 0;
+      left: 0;
+      padding: 0;
+
+      .about__title-container {
+        margin: 40px 0 24px;
+      }
+
+      &-content {
+        @include font(14);
+        line-height: 2;
+        margin-bottom: 8px;
+
+        p {
+          width: fit-content;
+          margin: 0;
+          display: inline;
+          letter-spacing: .35px;
+
+          &:nth-of-type(3) {
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    .about__button {
+      margin: 0 auto;
+    }
+
+    .about__img {
+      display: none;
+    }
+  }
 }
