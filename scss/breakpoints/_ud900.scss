@@ -19,7 +19,7 @@
       background: linear-gradient(to right, $blue, $blueBlack);
       z-index: 150;
       transform: translateY(-1000px);
-      transition: .3s;
+      transition: .5;
 
       &.inview {
         transform: translateY(0);
