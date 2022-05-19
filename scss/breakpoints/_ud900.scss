@@ -84,6 +84,12 @@
         }
       }
     }
+
+    &.nav--fixd {
+      .HB__list {
+        background: $white;
+      }
+    }
   }
 
   // top

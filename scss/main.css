@@ -3,6 +3,7 @@ html {
   font-size: 62.5%;
   /* font:10px */
   width: 100vw;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11,7 +12,7 @@ body {
   color: #191919;
   font-family: "Lato", "Noto Sans JP", sans-serif;
 }
-body.active {
+body.hidden {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -461,7 +462,22 @@ th {
 }
 
 .nav--fixd {
-  display: none;
+  background: #FFFFFF;
+  transform: translateY(-100px);
+  transition: 0.3s;
+  position: fixed;
+  box-shadow: 0 1px 5px 0 rgba(25, 25, 25, 0.3);
+}
+.nav--fixd .nav__item {
+  color: #191919;
+}
+.nav--fixd .HB__btn span {
+  background-color: #191919 !important;
+}
+.nav--fixd.active {
+  position: fixed;
+  z-index: 200;
+  transform: translateY(0);
 }
 
 .top-container {
@@ -1741,6 +1757,9 @@ th {
   .header-nav .HB__btn.inview span:nth-child(3) {
     transform-origin: left;
     transform: rotate(-45deg);
+  }
+  .header-nav.nav--fixd .HB__list {
+    background: #FFFFFF;
   }
 
   .top__background .swiper-slide img {
