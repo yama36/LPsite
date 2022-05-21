@@ -467,6 +467,7 @@ th {
   transition: 0.3s;
   position: fixed;
   box-shadow: 0 1px 5px 0 rgba(25, 25, 25, 0.3);
+  z-index: 250;
 }
 .nav--fixd .nav__item {
   color: #191919;
@@ -476,7 +477,6 @@ th {
 }
 .nav--fixd.active {
   position: fixed;
-  z-index: 200;
   transform: translateY(0);
 }
 
@@ -1708,7 +1708,7 @@ th {
     background: linear-gradient(to right, #4b6cb7, #182848);
     z-index: 150;
     transform: translateY(-1000px);
-    transition: 0.5;
+    transition-duration: 0.5s;
   }
   .header-nav .HB__list.inview {
     transform: translateY(0);
@@ -1760,6 +1760,15 @@ th {
   }
   .header-nav.nav--fixd .HB__list {
     background: #FFFFFF;
+  }
+  .header-nav.nav--fixd .HB__list {
+    position: fixed;
+    transform: translateY(-1000px);
+    transition-duration: 0.5s;
+    z-index: 200;
+  }
+  .header-nav.nav--fixd .HB__list.inview {
+    transform: translateY(-5px);
   }
 
   .top__background .swiper-slide img {

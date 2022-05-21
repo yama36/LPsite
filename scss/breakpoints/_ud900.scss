@@ -19,7 +19,7 @@
       background: linear-gradient(to right, $blue, $blueBlack);
       z-index: 150;
       transform: translateY(-1000px);
-      transition: .5;
+      transition-duration: .5s;
 
       &.inview {
         transform: translateY(0);
@@ -88,6 +88,17 @@
     &.nav--fixd {
       .HB__list {
         background: $white;
+      }
+
+      .HB__list {
+        position: fixed;
+        transform: translateY(-1000px);
+        transition-duration: .5s;
+        z-index: 200;
+
+        &.inview {
+          transform: translateY(-5px);
+        }
       }
     }
   }
