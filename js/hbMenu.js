@@ -19,7 +19,6 @@ btn.forEach((e, index) => {
 
 menu.forEach((e, index) => {
   const child = e.children;
-
   for (let i = 0; i < child.length; i++) {
     child[i].addEventListener('click', () => {
       menu[index].classList.remove('inview');

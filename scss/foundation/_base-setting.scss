@@ -22,3 +22,7 @@ body {
 main {
   overflow: hidden;
 }
+
+section {
+  @include anchor;
+}
