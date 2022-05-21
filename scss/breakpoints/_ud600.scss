@@ -81,6 +81,10 @@
     .top__title {
       @include font(48, 58);
       letter-spacing: 2px;
+
+      div:last-of-type {
+        letter-spacing: 2px;
+      }
     }
 
     .top__discription {

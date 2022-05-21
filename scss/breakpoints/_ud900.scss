@@ -85,6 +85,14 @@
       }
     }
 
+    .nav-back {
+      background: linear-gradient(to right, $blue, $blueBlack);
+      position: absolute;
+      z-index: 160;
+      width: 100%;
+      height: $header-nav-height;
+    }
+
     &.nav--fixd {
       .HB__list {
         background: $white;
@@ -94,11 +102,20 @@
         position: fixed;
         transform: translateY(-1000px);
         transition-duration: .5s;
-        z-index: 200;
+        z-index: -1;
 
         &.inview {
           transform: translateY(-5px);
         }
+      }
+
+      .nav-back {
+        background: $white;
+        position: absolute;
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 1px 5px 0 rgba($color: $black, $alpha: .3);
       }
     }
   }

@@ -40,6 +40,10 @@
     color: $white;
     text-shadow: 4px 4px 4px rgba($color: #182848, $alpha: .5);
     letter-spacing: 2px;
+
+    div:last-of-type {
+      letter-spacing: 4px;
+    }
   }
 
   .top__discription {
