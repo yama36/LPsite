@@ -1,5 +1,5 @@
-const btn = document.querySelector('.HB__btn');
-const menu = document.querySelector('.HB__list');
+const btn = document.querySelector('.nav--top .HB__btn');
+const menu = document.querySelector('.nav--top .HB__list');
 
 
 // スクロール禁止

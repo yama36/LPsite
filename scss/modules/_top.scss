@@ -13,8 +13,12 @@
 
   .swiper {
     &-slide {
-      img {
+      .swiper-img {
         width: 100%;
+      }
+
+      .swiper-img--SP {
+        display: none;
       }
     }
   }

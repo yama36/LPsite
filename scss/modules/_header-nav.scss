@@ -51,7 +51,27 @@
   }
 }
 
-// nav-fixd
+// nav--fixd
 .nav--fixd {
-  display: none;
+  background: $white;
+  transform: translateY(-100px);
+  transition: .3s;
+  position: fixed;
+  box-shadow: 0 1px 5px 0 rgba($color: $black, $alpha: .3);
+
+  .nav__item {
+    color: $black;
+  }
+
+  .HB__btn {
+    span {
+      background-color: $black !important;
+    }
+  }
+
+  &.active {
+    position: fixed;
+    z-index: 200;
+    transform: translateY(0);
+  }
 }

@@ -3,6 +3,7 @@
 html {
   font-size: 62.5%; /* font:10px */
   width: 100vw;
+  scroll-behavior: smooth;
 }
 
 
@@ -11,7 +12,7 @@ body {
   color: $black;
   font-family: 'Lato', 'Noto Sans JP', sans-serif;
 
-  &.active {
+  &.hidden {
     width: 100%;
     height: 100%;
     position: fixed;
