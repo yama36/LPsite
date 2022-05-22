@@ -495,10 +495,13 @@ th {
   background: linear-gradient(to right, #4b6cb7, #182848);
   width: 100vw;
 }
-.top__background .swiper-slide .swiper-img {
+.top__background .top__background--mask .swiper {
+  max-width: 1300px;
+}
+.top__background .top__background--mask .swiper-slide .swiper-img {
   width: 100%;
 }
-.top__background .swiper-slide .swiper-img--SP {
+.top__background .top__background--mask .swiper-slide .swiper-img--SP {
   display: none;
 }
 
@@ -1894,6 +1897,7 @@ th {
   }
 
   .top__text-container .top__title span {
+    display: inline;
     margin-right: calc(100% - 250px);
   }
 

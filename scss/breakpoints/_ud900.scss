@@ -135,6 +135,7 @@
   .top__text-container {
     .top__title {
       span {
+        display: inline;
         margin-right: calc(100% - 250px);
       }
     }
