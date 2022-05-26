@@ -1,4 +1,3 @@
-
 // Intersection Observer
 // 監視対象
 const header = document.querySelector('.top-container');

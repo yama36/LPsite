@@ -267,8 +267,8 @@
 
 // anchor
 @mixin anchor {
-  padding-top: calc(map-get($sizes, 'l') + $header-nav-height);
-  margin-top: calc(-1 * (map-get($sizes, 'l') + $header-nav-height));
+  padding-top: $header-nav-height;
+  margin-top: calc(-1 * $header-nav-height);
 }
 
 // レスポンシブ
